@@ -1,1 +1,54 @@
+JavaScript
+
 https://developer.mozilla.org/pt-BR/
+
+var precisa de um identificador
+pode usar var, let ou const
+Ex: var n1 (variavél)
+n1 = 5 (= recebe), isso se chama de atribuição
+O nome de cada variável se chama identificador
+
+Identificadores:
+Podem começar com letra, $ ou _
+Não podem começar com números
+Podem usar letras ou números
+É possível usar acentos e símbolos
+Não podem conter espaços
+Não podem ser palavras reservadas
+-----------------------------------------------------------------------------------
+Tipos primitivos do JavaScript
+JavaScript não diferencia valores numéricos inteiros e reais. Todos são considerados como "number". ao ivés ser inteiros ou reais. (5 18 0.5 -15.9 3.13 10).
+"number": tem dois valores internos muito importantes:
+infinity
+NaN (note and number)
+
+String são cadeias de caracteres, "Google" ou Ex. telefone, tem números, traços.CPF é string, composto pontos, traços e caracteres.
+Boolean, true e false, normal como os outros.
+
+null
+undefined
+object (JavaScript é orientada a objetos)
+Tipo inteiro array, que é object
+function também é um tipo primitivo no JavaScript
+---------------------------------------------------------------------------------
+
+Dicas para escolher nomes de Identificadores:
+Maiúsculas e minúsculas fazem diferença. Caixa alta e Caixa baixa, ficam como variáveis diferentes e com valores diferentes.
+Tente usar nomes coerentes para as suas variáveis. Ex: Nome da pessoa (var nome), Salário (var sal), Idade(idade).
+Evite se tornar um programador alfabeto, ou contador. Usa só letras e números.
+
+Fechar nodeJS .exit
+CTRL + L (Limpar tela nodejs)
+--------------------------------------------------------------------------
+typeof (tipo de) Ex. typeof n, mostra que n é um number.
++ variavel, mostra na tela, junta uma coisa na outra. Tem a função de concatenação. String + String concatena
++ também para adição, tem que ser number + number
+
+O window.prompt retorna uma string, mesmo que seja número ele trata como string
+Number.parseInt(n)
+Number.parseFloat(n)
+Number(n) Neste o JavaScript decide conforme os valores recebidos
+------------------------------------------------------------------------------
+Converter de número para string
+String(n) ou n.toString()
+var soma = parseInt(n1) + parseInt(n2)
