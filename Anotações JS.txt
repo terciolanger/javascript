@@ -46,9 +46,19 @@ typeof (tipo de) Ex. typeof n, mostra que n é um number.
 
 O window.prompt retorna uma string, mesmo que seja número ele trata como string
 Number.parseInt(n)
-Number.parseFloat(n)
+Number.parseFloat(n) //ponto flutuante, com vírgula
 Number(n) Neste o JavaScript decide conforme os valores recebidos
 ------------------------------------------------------------------------------
 Converter de número para string
-String(n) ou n.toString()
+String(n) ou n.toString() 
 var soma = parseInt(n1) + parseInt(n2)
+-----------------------------------------------------------------------------
+Exemplo Terminal: nodejs "Concatenação" (Método Antigo)
+nome = 'Tercio'
+idade = 53
+nota = 5.5
+'O Aluno ' + nome + ' com a idade de ' + idade + ' anos' + ' teve a nota ' + nota
+Resultado: 'O Aluno Tercio com a idade de 53 anos Teve a nota 5.5'
+--------------------------------------------------------------------------------
+Método novo
+'O aluno ${nome} com ${idade} anos tirou a nota ${nota}' // mas não funcionou no meu Note por causa da versão
