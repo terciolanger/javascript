@@ -61,4 +61,20 @@ nota = 5.5
 Resultado: 'O Aluno Tercio com a idade de 53 anos Teve a nota 5.5'
 --------------------------------------------------------------------------------
 Método novo
-'O aluno ${nome} com ${idade} anos tirou a nota ${nota}' // mas não funcionou no meu Note por causa da versão
+Template strings é um literal string que permitem expressões embutidas. $ PlaceHolder
+Esse literal é delimitado por acentos graves ` ao invés das tradicionais aspas simples ' ou aspas duplas ".
+`O aluno ${nome} com ${idade} anos tirou a nota ${nota}`    // Neste caso usa acento grave 	`flecha em cima do ctrl espaço
+`O aluno ${nome} com idade de ${idade} tirou nota ${nota}`
+'O aluno Tércio com idade de 53 tirou nota 7'
+----------------------------------------------------------------------------------
+s.length // quantos caractres a string tem
+s.toUpperCase() // tudo para MAISCULAS
+s.toLowerCase() //tudo para minusculas
+var n1 = 1545.5
+n1.toFixed(2) // 2 casas decimais
+'1545.50'
+n1.toFixed(2).replace('.',',') //Troca ponto por virgula
+'1545,50'
+n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
+'R$ 1,545.50'n1.toLocaleString('pt-BR',{style: 'currency', currency: USD'})
+'US$ 1,545.50'
