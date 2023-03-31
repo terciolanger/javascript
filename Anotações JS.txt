@@ -16,6 +16,9 @@ Podem usar letras ou números
 Não podem conter espaços
 Não podem ser palavras reservadas
 -----------------------------------------------------------------------------------
+Que tipos de dados são suportados pelo JavaScript?
+O JavaScript possui 7 tipos de dados primitivos: String, Number, Boolean, BigInt, Null, Undefined e Symbol. O tipo de dado Object entra na lista como oitavo, embora seja listado como um tipo, um Object é uma estrutura de dados.
+
 Tipos primitivos do JavaScript
 JavaScript não diferencia valores numéricos inteiros e reais. Todos são considerados como "number". ao ivés ser inteiros ou reais. (5 18 0.5 -15.9 3.13 10).
 "number": tem dois valores internos muito importantes:
@@ -44,6 +47,16 @@ typeof (tipo de) Ex. typeof n, mostra que n é um number.
 + variavel, mostra na tela, junta uma coisa na outra. Tem a função de concatenação. String + String concatena
 + também para adição, tem que ser number + number
 
+O que o operador typeof do JavaScript faz?
+O tipo do dado de um operando em formato de string, podendo por exemplo retornar se o valor verificado é uma String, Number, Boolean, Null, Undefined, entre outros.
+
+Exemplo de uso do typeof
+const mensagem = "Algum texto aqui";
+console.log(typeof mensagem); // output: string
+
+const ano = 2022;
+console.log(typeof ano); // output: number
+---------------------------------------------------------------------------
 O window.prompt retorna uma string, mesmo que seja número ele trata como string
 Number.parseInt(n)
 Number.parseFloat(n) //ponto flutuante, com vírgula

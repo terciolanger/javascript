@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alterar fonte</title>
+</head>
+
+<body>
+    <h2>Questões de concursos</h2>
+    <div id="xpto">
+        <p>Texto de teste 1</p>
+        <p id="234">Texto de teste 2</p>
+    </div>
+    <script>
+        document.getElementById("234").style.fontSize = "48px";
+    </script>
+
+    <textarea id="oi" style=""></textarea>
+    <button type="button" id="botao" onclick="aumentar()">Click Me!</button>
+
+<script>
+    function aumentar() {
+        document.getElementById("oi").style.fontSize = "40px";
+    }
+</script>
+<!--Na página web, temos um script JavaScript embutido. No script, altera-se o tamanho da fonte do elemento <p> cujo atributo id é "234". Para isso, mapeamos da seguinte forma:
+
+O objeto especial document representa a página web;
+O elemento <p> cujo atributo id é "234" é mapeado pelo método do document chamado getElementById(), passando o valor "234" como parâmetro;
+O tamanho da fonte desse elemento é representado pela propriedade fontSize que vem de outra: style.
+Após a execução do script, o tamanho da fonte do elemento <p> com id “234” é atualizado para 48px.-->
+
+</body>
+
+</html>
