@@ -91,3 +91,19 @@ n1.toFixed(2).replace('.',',') //Troca ponto por virgula
 n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
 'R$ 1,545.50'n1.toLocaleString('pt-BR',{style: 'currency', currency: USD'})
 'US$ 1,545.50'
+---------------------------------------------------------------------------------
+Operadores:
+aritméticos: + - * / % ** (% resto da divisão inteira. Ex: 5/2, resto 1) (** Potência quadrado)
+1º Parêntesis;
+2º Expoentes;
+3º Multiplicações e Divisões; (da esquerda para a direita)
+4º % resto da divisão
+5º Somas e Subtrações. (da esquerda para a direita)
+
+atribuição
+Auto attribuição var n=3 (auto encremento)
+n = n + 4  ou  (n += 4) (recebe ele mesmo) ou (n++)
+
+reladionais
+lógicos
+ternário
