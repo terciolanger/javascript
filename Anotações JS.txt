@@ -195,4 +195,37 @@ if (preco >= 0) { n = 80 } else {  x = 10 }
 80
 ------------------------------------------------------------------------------------
 DOM - Document Object Model
+Àrvore DOM
+Raiz dentro do navegador "window"
+tudo em Javascript está dentro de um objeto chamado window
+Dentro do window tem  vários outros objetos
+Exemplo: 
+location (diz qual é a localização do site, a URL da pagina atual, páginma anterior)
+document (é o documentoi atual, a página atual). Dentro do document tem o objeto HTML. Dentro de HTML tem dois filhos, head e body
+history (armazena de onde você veio, pra onde você vai, facilita a navegação dentro do site)
+
+Selecionando:
+por Marca (por tag name)
+getElementsByTagName() Está dentro de document
+
+var corpo = window.document.body
+var p1 = window.document.getElementsByTagName("p")[0] //onde 0 é o primeiro parágrafo
+window.document.write(p1.innerText) innerText //o texto que está dentro do primeiro parágrafo, sem os filhos, sem a formatação, simplesmente o texto
+p1.style.fontSize ="38px"
+corpo.style.background = 'black'
+document.write(p1.innerHTML) // Ele puxa a formatação, no caso o Strong)
+
+por ID
+getElementsById()  //Também pode fazer assim, sem variável, document.getElementById("msg").style.fontSize = "50px";
+
+por Nome
+getElementsByName() 
+
+por Classe
+getElementsByClassName() 
+
+por Seletor
+querySelector()
+querySelectorAll()
+var d = window.document.querySelector('div#msg') //muda direto como se fosse no Style, esse é recomendado atualmente
 

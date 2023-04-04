@@ -4,14 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JavaScript</title>
+    <title>Primeiros passos com DOM</title>
     <style>
-        h1{
-            font-size: 20px;
-        }
+        body {
+            background: rgba(9, 43, 194, 0.596);
+            color: white;
+            font: normal 20pt Arial;
+        }        
     </style>
+   
 </head>
 <body>
-    <h1>Teste</h1>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        /*querySelector*/
+        var d = window.document.querySelector('div#msg')
+        /*var d = window.document.getElementById('msg')*/
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p") [0]
+        p1.style.fontSize ="38px"
+        p1.innerText ="p1 Mudado pelo JavaScript"
+        corpo.style.background = 'black'
+        d.style.fontSize = "50px"
+        /*d.style.fontSize = "50px" ou como abaixo*/
+        /*document.getElementById("msg").style.fontSize = "50px";*/
+
+        /*window.document.write(`Está escrito assim: ${p1.innerText}`)
+        window.document.write('Olá, Mundo! <br>')  
+        document.write(window.document.charset) 
+        document.write(window.document.URL) */
+         
+
+    </script>
 </body>
 </html>
