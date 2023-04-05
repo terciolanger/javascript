@@ -228,4 +228,29 @@ por Seletor
 querySelector()
 querySelectorAll()
 var d = window.document.querySelector('div#msg') //muda direto como se fosse no Style, esse é recomendado atualmente
+-----------------------------------------------------------------------------------
+Eventos DOM
+É tudo o que possa acontecer com a tag escolhida (qualquer elemento)
+Ex: div (Métodos, Eventos) disparados com o movimento do mouse.
+mouseenter: dispara quando passa o mouse dentro do elemento
+mousemove : dispara quando move o mouse dentro do elemento
+mousedown: dispara quando clicar (segurar) dentro do elemento
+mouseup: dispara quando soltar o mouse dentro do elemento
+click: dispara quando aperta e solda rapidamente (clicar) o mouse
+mouseout: dispara quando mover o mouse para fora do elemento
+----------------------------------------------------------------------------------
+Function (Função)
+Em JavaScript, é um conjunto de códigos (linhas), que vão ser executadas somente quando o evento ocorrer.
+Ex: Bloco: function {  }
+Programar 10 linhas, essas linhas não vão ser executadas automaticamente, elas só vão ocorrer quando clicar por Ex. dentro da div, somente quando o evento ocorrer.
+Para que o método possa funcionar, é preciso dar um nome para função
+Ex: funções de evento
+function ação(parâmetros) {
+
+}
+----------------------------------------------------------------------------------
+Arquivos .js
+testar o console js
+console.log('O console funcionou corretamente')
+
 
