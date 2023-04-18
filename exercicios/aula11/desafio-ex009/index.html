@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio do exercício 9</title>
+</head>
+
+<body>
+    <h1>Vivendo em país</h1>
+    <p>
+        Em que país você mora?
+        <input type="text" name="txtpais" id="txtpais">        
+    </p>
+    <input type="button" value="Verificar" onclick="myFunction()">
+    <div id="res">
+
+    </div>
+    <script>        
+        function myFunction() {
+            var txttv = document.querySelector('input#txtpais') //1º vai ser a ligação do JS com a caixa de texto
+            var res = window.document.querySelector('div#res')// 2º onde vai ser exibido
+            var pais = String(txttv.value)
+            res.innerHTML = `<p>O seu país atual é <strong>${pais}</strong> </p>`
+            if (pais == 'Brasil'|| 'brasil') {
+                res.innerHTML += `<p>Você mora no <strong>Brasil</strong></p>`
+            } else {
+                res.innerHTML += `<p>Você é um <strong>Estrangeiro</strong></p>`
+            }
+        }
+    </script>
+
+</body>
+
+</html>

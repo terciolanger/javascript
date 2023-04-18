@@ -28,10 +28,18 @@
     <div id="res">
 
     </div>
-    <script>        
+    <script>
+        /*var txttv = window.document.getElementById('txtvel')*/  
         function calcular() {
-            var txttv = document.querySelector('#txtvel') //Esta vai ser a ligação do JS com a caixa de texto
-            var vel = Number(txttv.value)   
+            var txttv = document.querySelector('input#txtvel') //Esta vai ser a ligação do JS com a caixa de texto
+            var res = window.document.querySelector('div#res')     
+            var vel = Number(txttv.value)  
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}</strong> Km/h</p>`
+            if (vel > 60){
+                res.innerHTML += `<p>Você está <strong>Multado</strong> por excesso de velocidade </p>`    
+            } else {
+                res.innerHTML +=`<p>Dirija sempre com cinto de segurança</p>`
+            }
         }
     </script>
     
