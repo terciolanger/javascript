@@ -5,8 +5,13 @@
 @media screen and (max-width: 600px) {    
     .nav {
         float: left;   
-        display: flex;              
-    }    
+        display: flex;                     
+    }
+    
+    .topnav {
+        padding-bottom: 10px;                       
+    }     
+    
     #logo_polo {
         display: inline-block;
         width: 13vh;        
@@ -16,14 +21,7 @@
     }
     header h1 {
         font-size: 35px;
-    }
-    
-    .topnav {
-        padding-bottom: 10px;
-    }
-    .topnav.icon {
-        padding-bottom: 0px;
-    }
+    }        
 
     .topnav a:not(:first-child),
     .dropdown .dropbtn {
@@ -37,7 +35,7 @@
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 
-@media screen and (max-width: 600px) {    
+@media screen and (max-width: 599px) {      
     .topnav.responsive {
         position: relative;
     }
@@ -64,7 +62,7 @@
     }
 }
 
-@media screen and (min-width:600px) {    
+@media screen and (min-width:600px) {     
     #logo_ufsc {
         display: inline-block;
     }
@@ -79,16 +77,17 @@
     }
 }
 
-@media screen  and (min-width:600px) and (max-width:800px){
+@media screen  and (min-width:600px) and (max-width:800px){    
     .nav {
         display: inline-block;
         float: left;
         margin-top: -12px;
-        margin-bottom: 0;
+        margin-bottom: 0;        
     }
+     
     .active{
         height: 91px;
-    }    
+    }       
 }
 
 @media screen and (min-width:972px) and (max-width:1182px) {

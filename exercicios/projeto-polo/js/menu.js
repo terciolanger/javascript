@@ -7,7 +7,11 @@ function myFunction() {
         
     } else {
         x.className = "topnav";        
-    }   
+    }       
 }
+
+/*.topnav {
+    padding-bottom: 0;                       
+}*/
 
 

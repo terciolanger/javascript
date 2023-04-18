@@ -45,7 +45,6 @@ header h1 {
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
-
 .sticky {
     position: fixed;
     top: 0;
@@ -53,20 +52,17 @@ header h1 {
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-
 .sticky+.content {
     padding-top: 102px;
 }
 
 /* Add a black background color to the top navigation */
-
 .topnav {
     background-color: #333;
     overflow: hidden;    
 }
 
 /* Style the links inside the navigation bar */
-
 .topnav a {
     float: left;
     display: block;
@@ -78,29 +74,24 @@ header h1 {
 }
 
 /* Add an active class to highlight the current page */
-
 .active {
     background-color: #04AA6D;
     color: white;   
-    height: 54px; 
-    
+    height: 54px;     
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-
 .topnav .icon {
-    display: none;
+    display: none;    
 }
 
 /* Dropdown container - needed to position the dropdown content */
-
 .dropdown {
     float: left;
     overflow: hidden;            
 }
 
 /* Style the dropdown button to fit inside the topnav */
-
 .dropdown .dropbtn {
     font-size: 17px;
     border: none;
@@ -113,7 +104,6 @@ header h1 {
 }
 
 /* Style the dropdown content (hidden by default) */
-
 .dropdown-content {
     display: none;
     position: absolute;    
@@ -124,7 +114,6 @@ header h1 {
 }
 
 /* Style the links inside the dropdown */
-
 .dropdown-content a {
     float: none;
     color: black;
@@ -135,7 +124,6 @@ header h1 {
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */
-
 .topnav a:hover,
 .dropdown:hover .dropbtn {
     background-color: #555;
@@ -143,15 +131,12 @@ header h1 {
 }
 
 /* Add a grey background to dropdown links on hover */
-
 .dropdown-content a:hover {
     background-color: #ddd;
     color: black;   
 }
 
-
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -170,6 +155,10 @@ ul.nav > li {
 ul.nav > li > a {      
     margin-top: -8px; 
     margin-bottom: -20px;    
+}
+
+ul.nav > li > a:hover {      
+    background-color: #333;   
 }
 
 .nav img {  
