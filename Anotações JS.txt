@@ -1,5 +1,9 @@
 JavaScript
 
+F8 Executa o arquivo .js
+Fechar nodeJS .exit
+CTRL + L (Limpar tela nodejs)
+
 https://developer.mozilla.org/pt-BR/
 
 var precisa de um identificador
@@ -40,8 +44,6 @@ Maiúsculas e minúsculas fazem diferença. Caixa alta e Caixa baixa, ficam como va
 Tente usar nomes coerentes para as suas variáveis. Ex: Nome da pessoa (var nome), Salário (var sal), Idade(idade).
 Evite se tornar um programador alfabeto, ou contador. Usa só letras e números.
 
-Fechar nodeJS .exit
-CTRL + L (Limpar tela nodejs)
 --------------------------------------------------------------------------
 typeof (tipo de) Ex. typeof n, mostra que n é um number.
 + variavel, mostra na tela, junta uma coisa na outra. Tem a função de concatenação. String + String concatena
@@ -163,14 +165,29 @@ undefined
 >
 
 ---------------------------------------------------------------------------------
+if (condição1) {
+    instrução1
+} else {
+       if (condição2) {
+         instrução2
+       } else {
 
-if (condição1)
+       }
+}
+
+
+if (condição1) {
    instrução1
-else
-   if (condição2)
-      instrução2
-   else
-      if (condição3)
+} else {
+   if (condição2) {
+         instrução2
+   } else {
+          if (condição3) {
+              instrução3
+          { else {
+                instrução4
+           }
+}
 ---
 
 if (x > 5) {

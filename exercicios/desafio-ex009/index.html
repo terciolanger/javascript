@@ -21,14 +21,18 @@
     <script>        
         function myFunction() {
             var txttv = document.querySelector('input#txtpais') //1º vai ser a ligação do JS com a caixa de texto
-            var res = window.document.querySelector('div#res')// 2º onde vai ser exibido
-            var pais = String(txttv.value)
-            res.innerHTML = `<p>O seu país atual é <strong>${pais}</strong> </p>`
-            if (pais == 'Brasil'|| 'brasil') {
-                res.innerHTML += `<p>Você mora no <strong>Brasil</strong></p>`
-            } else {
+            var res = window.document.querySelector('div#res')// 2º onde vai ser exibido           
+            var pais = String(txttv.value)           
+
+            if (pais == "Brasil"|| pais == "brasil") {
+                res.innerHTML = `<p>O seu país atual é <strong>
+                ${pais[0].toUpperCase() + pais.substr(1)}</strong> </p>`
+                //fazemos a conversão para maiúsculo usando toUpperCase(). E por último, concatenamos com a mesma string e removemos a primeira letra usando substr(1)
+                
+                res.innerHTML += `<p>Você é <strong>brasileiro</strong></p>`
+            } else {                 
                 res.innerHTML += `<p>Você é um <strong>Estrangeiro</strong></p>`
-            }
+            }                          
         }
     </script>
 
