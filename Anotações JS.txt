@@ -211,6 +211,96 @@ if (preco <= 0) { n = 80 } else {  x = 10 }
 if (preco >= 0) { n = 80 } else {  x = 10 }
 80
 ------------------------------------------------------------------------------------
+Condição Múltipla
+
+switch (expressão) {
+       case valor 1:
+
+             break   \\Obrigatório	
+       case valor 2:
+
+             break   \\Obrigatório
+       case valor 3:
+
+             break   \\Obrigatório
+       default
+
+             break   \\Último é Opcional
+
+//Usando o switch com data 
+// Só funciona com números inteiros e String
+var agora = new Date()
+var diaSem = agora.getDay() //Dia da semana
+/* 
+0 - Domingo
+1 - Segunda
+2 - Terça
+3 - Quarta
+4 - Quinta
+5 - Sexta
+6 - Sábado
+*/
+console.log(diaSem)
+switch (diaSem) {
+    case 0:
+        console.log('Domingo')
+        break
+    case 1:
+        console.log('Segunda-feira')
+        break
+    case 2:
+        console.log('Terça-feira')
+        break
+    case 3:
+        console.log('Quarta-feira')
+        break
+    case 4:
+        console.log('Quinta-feira')
+        break
+    case 5:
+        console.log('Sexta-feira')
+        break
+    case 6:
+        console.log('Sábado')
+        break
+    default :
+        console.log('Dia inválido')   
+}
+------------------------------------------------------------------------------------
+Repetições:
+
+Repetições com 
+teste no início (while)
+while (condição) {
+}
+
+Repetições com 
+teste no final (do)
+do {
+} while (condição)
+
+Repetições com 
+variável de controle (Inicialização, Teste lógico e um encremento) (for)
+for (inicio ; teste ; incremento) {
+}
+for (var cont = 1; cont <=10; cont++ ) {
+
+}
+
+Sequencial
+com Condições
+Repetilões ou Laços
+while (condição) {
+}
+
+function comerPizza() {
+     while (temFatia()) {
+              comerFatia()
+     }
+}
+
+
+------------------------------------------------------------------------------------
 DOM - Document Object Model
 Àrvore DOM
 Raiz dentro do navegador "window"
