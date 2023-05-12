@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="corh1">Hora do Dia</h1>
+
+    <main>
+        <div id="container">
+            <img id="img" src="" alt="">
+        </div>
+
+        <script>
+            const atual = new Date()
+            var hora = atual.getHours() // pega a hora atual
+            //var hora = 18            
+
+            if (hora <= 12) {
+                document.write(`<p class="p">Bom Dia!. São ${atual.toLocaleTimeString('pt-BR')} Horas.`)
+                document.body.style.backgroundImage = 'url(imagem/manhaback.jpg)';
+                document.getElementById('img').src = 'imagem/manha.jpg';
+
+
+            } else if (hora < 18) {
+                document.write(`<p class="p">Boa Tarde!. São ${atual.toLocaleTimeString('pt-BR')} Horas.`)
+                //document.body.style.backgroundColor = '#d7ee54';
+                document.body.style.backgroundImage = 'url(imagem/tarde.jpg)';
+                document.getElementById('img').src = 'imagem/tarde.jpg';
+
+            } else {
+                document.write(`<p class="p">Boa Noite!. São ${atual.toLocaleTimeString('pt-BR')} Horas.`)
+                document.getElementById('corh1').style.color = "#fff";
+                document.body.style.backgroundImage = 'url(imagem/noiteback.jpg)';
+                document.getElementById('img').src = 'imagem/noite.jpg';
+            }
+        </script>
+    </main>
+</body>
+
+</html>

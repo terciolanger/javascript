@@ -1,5 +1,9 @@
 JavaScript
 
+Arquivos .js
+testar o console js
+console.log('O console funcionou corretamente')
+
 F8 Executa o arquivo .js
 Fechar nodeJS .exit
 CTRL + L (Limpar tela nodejs)
@@ -181,14 +185,25 @@ if (condição1) {
 } else {
    if (condição2) {
          instrução2
-   } else {
+    else {
           if (condição3) {
               instrução3
           { else {
                 instrução4
            }
-}
----
+     }
+---------------------------------------------------------------------------------
+if (res <= 18) {
+    console.log ('Criança ou Adolescente')
+} else {
+    if (res > 18) {
+        console.log('Chovem ou Adulto')
+     } else {
+    console.log('Idoso(a)')
+       }
+  }
+console.log (`A idade é: ${res}`) 
+------------------------------------------------------------------------------
 
 if (x > 5) {
 
@@ -292,14 +307,30 @@ com Condições
 Repetilões ou Laços
 while (condição) {
 }
+------------------------------------------------------------------------------------
+Array ou Variável composta
+array [0 1 2] "0" índice ou chave. Dentro o conteúdo, valor ou elemento
+let num = [5,8,4 ] (Vetor de 3 elementos 0 1 2)
 
-function comerPizza() {
-     while (temFatia()) {
-              comerFatia()
-     }
+num.push(7) (Adiciona um novo Elemento)
+num.length (É o comprimento do Vetor)
+num.sort() (Coloca em ordem crescente)
+
+Código Tradicional do percurso em Vetores
+let val = [8,1,7,4,2,9]
+for (let i = 0; i < val.length; i++) {
+  console.log(`O índice: ${[i]} Tem o elemento ${val[i]}`)
 }
 
+//Esse é código mais usado Simplificado e Moderno, para variáveis compostos e objetos
+in Para cada posição (índice) dentro do array "Para a vari[avel Composta"
+let val = [8,1,7,4,2,9]
 
+for (let i in val) {
+  console.log(`O índice: ${[i]} Tem o elemento ${val[i]}`)  
+}
+
+val.indexOf(7)  Para buscar um valor
 ------------------------------------------------------------------------------------
 DOM - Document Object Model
 Àrvore DOM
@@ -355,9 +386,50 @@ Ex: funções de evento
 function ação(parâmetros) {
 
 }
+
+"Funções são Ações executadas assim que são Chamadas ou em decorrência de algum Evento."
+"Uma Função pode receber Parâmetros e retornar um Resultado."
+
+Toda Função precisa ter uma chamada. Também pode ser automatizada.
+Precisa ter alguma entrada, chamada de Parâmetro
+Toda Função tem uma ação.É todo o processo envolvido.
+No final de Função é chamado de Retorno.
+
+Toda Função tem:
+Uma Chamada
+Um Conjunto de Parâmetros (Obs: Nem toda Função usa Parâmetros)
+Uma Ação
+E um Retorno (Obs: Nem toda Função tem Retornos)
+
+function parimp(n) {  <== parâmetro
+     if (n%2==0) {  <== ação
+         return 'par'
+     } else {
+         return 'impar'  <== retorno "Uma função em JavaScript só pode ter um retorno"
+     }
+}
+let res = parimp(11) <== chamada
+
+function comerPizza() {
+     while (temFatia()) {
+              comerFatia()
+     }
+}
+
+---------------------------------------------------------------------------------------------
+const inventory = [
+  { name: 'apples', quantity: 2 }, //{ } Declara um Objeto
+  { name: 'bananas', quantity: 0 },//1º Índice vai ser name, "não vai ser 0". O atributo vai ser apples
+  { name: 'cerejas', quantity: 5 }
+];
+
+function isCherries(fruit) {
+  return fruit.name === 'cerejas';
+}
+
+console.log(inventory.find(isCherries));
+// { name: 'cerejas', quantity: 5 }
 ----------------------------------------------------------------------------------
-Arquivos .js
-testar o console js
-console.log('O console funcionou corretamente')
+
 
 
