@@ -5,14 +5,14 @@ function checkButton() {
     let ano = document.getElementById('iano')
     document.getElementById("main").style.minHeight = '10%'
 
-    if (ano.value === "") {
-        document.getElementById("main").style.minHeight = '10%'
+    if (ano.value === "") {        
         document.getElementById("imasc").disabled = true
         document.getElementById('ifem').disabled = true
         document.getElementById('submit').disabled = true
         document.getElementById("p-res").style.display = 'none'
         document.getElementById("disp").style.display = 'none'
-        document.getElementById('img').style.display = 'none'       
+        document.getElementById('img').style.display = 'none' 
+        document.getElementById("main").style.minHeight = '10%'      
     }
     else if (ano.value != "") {
         document.getElementById("imasc").disabled = false
@@ -20,11 +20,10 @@ function checkButton() {
         document.getElementById('submit').disabled = false
         document.getElementById("p-res").style.display = 'block'
         document.getElementById("disp").style.display = 'block'
-        document.getElementById('img').style.display = 'block'   
-        //document.getElementById("main").style.minHeight = '90%'     
+        document.getElementById('img').style.display = 'block'            
     }
 
-    // --- Bebê            
+    // --- Bebê menino           
     if ((iidade <= 3) && (document.getElementById('imasc').checked)) {
         document.getElementById("p-res").innerHTML = `Bebê de ${iidade} Ano(s)`       
         document.getElementById("disp").innerHTML
@@ -35,9 +34,9 @@ function checkButton() {
         document.getElementById("main").style.minHeight = '90%' 
     }
 
-    // --- Bebê
+    // --- Bebê menina
     if ((iidade <= 3) && (document.getElementById('ifem').checked)) {
-        document.getElementById("p-res").innerHTML = `Bebê de ${iidade} Ano(s)`
+        document.getElementById("p-res").innerHTML = `Bebê de ${iidade} ano(s)`
         document.getElementById("disp").innerHTML
             = document.getElementById("ifem").value
             + " Pessoa Feminina selecionada!"
@@ -46,9 +45,9 @@ function checkButton() {
         document.getElementById("main").style.minHeight = '90%'       
     }
 
-    // --- Criança ou Adolescente
+    // --- Criança ou Adolescente Masculino
     if ((iidade > 3 && iidade <= 18) && (document.getElementById('imasc').checked)) {
-        document.getElementById("p-res").innerHTML = `Criança ou Adolescente de ${iidade} Anos`
+        document.getElementById("p-res").innerHTML = `Criança ou Adolescente de ${iidade} anos`
 
         //if (document.getElementById('imasc').checked) {
         document.getElementById("disp").innerHTML
@@ -59,9 +58,9 @@ function checkButton() {
         document.getElementById("main").style.minHeight = '90%'     
     }
 
-    // --- Criança ou Adolescente
+    // --- Criança ou Adolescente Feminino
     if ((iidade > 3 && iidade <= 18) && (document.getElementById('ifem').checked)) {
-        document.getElementById("p-res").innerHTML = `Criança ou Adolescente de ${iidade} Anos`
+        document.getElementById("p-res").innerHTML = `Criança ou Adolescente de ${iidade} anos`
         document.getElementById("disp").innerHTML
             = document.getElementById("ifem").value
             + " Pessoa Feminina selecionada!"
@@ -70,9 +69,9 @@ function checkButton() {
         document.getElementById("main").style.minHeight = '90%'        
     }
 
-    // --- Jovem ou Adulto
+    // --- Jovem ou Adulto Masculino
     if ((iidade > 18 && iidade < 60) && (document.getElementById('imasc').checked)) {
-        document.getElementById("p-res").innerHTML = `Jovem ou Adulto de ${iidade} Anos`
+        document.getElementById("p-res").innerHTML = `Jovem ou Adulto de ${iidade} anos`
         document.getElementById("disp").innerHTML
             = document.getElementById("imasc").value
             + " Pessoa Masculina selecionada!"
@@ -81,9 +80,9 @@ function checkButton() {
         document.getElementById("main").style.minHeight = '90%'        
     }
 
-    // --- Jovem ou Adulto
+    // --- Jovem ou Adulto Feminino
     if ((iidade > 18 && iidade < 60) && (document.getElementById('ifem').checked)) {
-        document.getElementById("p-res").innerHTML = `Jovem ou Adulto de ${iidade} Anos`
+        document.getElementById("p-res").innerHTML = `Jovem ou Adulto de ${iidade} anos`
         document.getElementById("disp").innerHTML
             = document.getElementById("ifem").value
             + " Pessoa Feminina selecionada!"
@@ -92,9 +91,9 @@ function checkButton() {
         document.getElementById("main").style.minHeight = '90%'        
     }
 
-    // --- Idodo(a)
+    // --- Idodo(a) Feminino
     if ((iidade >= 60) && (document.getElementById('ifem').checked)) {
-        document.getElementById("p-res").innerHTML = `Idoso(a) de ${iidade} Anos`
+        document.getElementById("p-res").innerHTML = `Idoso(a) de ${iidade} anos`
         document.getElementById("disp").innerHTML
             = document.getElementById("ifem").value
             + " Pessoa Feminina selecionada!"
@@ -103,9 +102,9 @@ function checkButton() {
         document.getElementById("main").style.minHeight = '90%'            
     }
 
-    // --- Idodo(a)
+    // --- Idodo(a) Masculino
     if ((iidade >= 60) && (document.getElementById('imasc').checked)) {
-        document.getElementById("p-res").innerHTML = `Idoso(a) de ${iidade} Anos`
+        document.getElementById("p-res").innerHTML = `Idoso(a) de ${iidade} anos`
         document.getElementById("disp").innerHTML
             = document.getElementById("imasc").value
             + " Pessoa Masculina selecionada!"
@@ -116,6 +115,6 @@ function checkButton() {
 
     else {
         document.getElementById("error").innerHTML
-            = "Por favor, selecione o Sexo!"             
+            = "Por favor, selecione o Sexo!"                
     }
 }
