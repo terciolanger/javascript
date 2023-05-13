@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 359px) {
     #img {    
-        width: 50%; 
+        width: 60%; 
         height: auto;
         position: absolute;    
-        top: 62vh;
+        top: 65vh;
         left: 25%;
         object-fit: cover;
         border-radius: 50%;
@@ -19,16 +19,19 @@
     button {
         font-size: clamp(.4em, 0.6em + 1vw, 2em);    
     }
+    select > option {
+        font-size: clamp(.3em, 0.4em + 1vw, 2em);        
+    }    
 }
 
 
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 360px) {
     #img {    
-        width: 50%; 
+        width: 69%; 
         height: auto;
         position: absolute;    
-        top: 67vh;
-        left: 25%;
+        top: 66vh;
+        left: 17%;
         object-fit: cover;
         border-radius: 50%;
     }
@@ -41,12 +44,15 @@
     button {
         font-size: clamp(.4em, 0.6em + 1vw, 2em);    
     }
+    select > option {
+        font-size: clamp(.4em, 0.5em + 1vw, 2em);        
+    }
 }
 
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 399px) {
     #img {    
-        width: 50%; 
+        width: 60%; 
         height: auto;
         position: absolute;    
         top: 57vh;
@@ -62,12 +68,85 @@
     }
 }
 
-@media screen and (min-width: 401px) {    
+@media screen and (min-width: 400px) {    
+    #img { 
+    width: 60%; 
+    height: auto;
+    position: absolute;    
+    top: 60vh;
+    left: 20%;
+    object-fit: cover;
+    border-radius: 50%;     
+    }
+    p {
+        font-size: clamp(.5em, 0.7em + 1vw, 2em); 
+    }
+    label {
+        font-size: clamp(.5em, 0.7em + 1vw, 2em);     
+    }
+    button {
+        font-size: clamp(.4em, 0.7em + 1vw, 2em);    
+    }
+    select > option {
+        font-size: clamp(.5em, 0.7em + 1vw, 2em);        
+    }
+}
+
+@media screen and (min-width: 550px) {    
+    #img { 
+    width: 55%; 
+    height: auto;
+    position: absolute;    
+    top: 59vh;
+    left: 20%;
+    object-fit: cover;
+    border-radius: 50%;     
+    }
+    p {
+        font-size: clamp(.5em, 0.7em + 1vw, 2em); 
+    }
+    label {
+        font-size: clamp(.5em, 0.7em + 1vw, 2em);     
+    }
+    button {
+        font-size: clamp(.4em, 0.7em + 1vw, 2em);    
+    }
+    select > option {
+        font-size: clamp(.5em, 0.7em + 1vw, 2em);        
+    }
+}
+
+
+@media screen and (min-width: 600px) {    
+    #img { 
+    width: 55%; 
+    height: auto;
+    position: absolute;    
+    top: 55vh;
+    left: 20%;
+    object-fit: cover;
+    border-radius: 50%;     
+    }
+    p {
+        font-size: clamp(.5em, 0.7em + 1vw, 2em); 
+    }
+    label {
+        font-size: clamp(.5em, 0.7em + 1vw, 2em);     
+    }
+    button {
+        font-size: clamp(.4em, 0.7em + 1vw, 2em);    
+    }
+    select > option {
+        font-size: clamp(.5em, 0.7em + 1vw, 2em);        
+    }
+}
+
+@media screen and (min-width: 701px) {    
     #img { 
     width: 50%; 
     height: auto;
     position: absolute;    
-    top: 55vh;
+    top: 52vh;
     left: 25%;
     object-fit: cover;
     border-radius: 50%;     
@@ -83,15 +162,16 @@
     }
     select > option {
         font-size: clamp(.5em, 0.7em + 1vw, 2em);        
-}
+    }
 }
 
-@media screen and (min-width: 701px) {    
+
+@media screen and (min-width: 850px) {    
     #img { 
     width: 50%; 
     height: auto;
     position: absolute;    
-    top: 42vh;
+    top: 48vh;
     left: 25%;
     object-fit: cover;
     border-radius: 50%;     
@@ -112,7 +192,7 @@
 
 @media screen and (min-width: 1000px) {    
     #img { 
-    width: 50%; 
+    width: 48%; 
     height: auto;
     position: absolute;    
     top: 40vh;

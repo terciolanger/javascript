@@ -53,8 +53,19 @@ label{
 }
 
 button {
-    font-size: clamp(.4em, 0.4em + 1vw, 2em);    
+    font-size: clamp(.4em, 0.4em + 1vw, 2em);     
+    border-radius: 5px;    
+    cursor:pointer;    
+    padding:6px 10px;  
+    border: none;  
+    background-color: rgba(128, 128, 128, 0.397); 
+    color: rgb(21, 21, 22);     
 }
+
+button:hover {
+    /*background:linear-gradient(to bottom, #68b465 5%, #abd5aa 100%);*/
+    background:linear-gradient(to bottom, #d2f1d1 5%, #bbdbba 100%);
+    }   
 
 select > option {
     font-size: clamp(.5em, 0.7em + 1vw, 2em);        
