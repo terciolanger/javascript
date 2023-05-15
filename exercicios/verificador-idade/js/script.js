@@ -47,7 +47,7 @@ function checkButton() {
 
     // --- Criança ou Adolescente Masculino
     if ((iidade > 3 && iidade <= 18) && (document.getElementById('imasc').checked)) {
-        document.getElementById("p-res").innerHTML = `Criança ou Adolescente de ${iidade} anos`
+        document.getElementById("p-res").innerHTML = `Criança/Adolescente de ${iidade} anos`
 
         //if (document.getElementById('imasc').checked) {
         document.getElementById("disp").innerHTML
@@ -60,7 +60,7 @@ function checkButton() {
 
     // --- Criança ou Adolescente Feminino
     if ((iidade > 3 && iidade <= 18) && (document.getElementById('ifem').checked)) {
-        document.getElementById("p-res").innerHTML = `Criança ou Adolescente de ${iidade} anos`
+        document.getElementById("p-res").innerHTML = `Criança/Adolescente de ${iidade} anos`
         document.getElementById("disp").innerHTML
             = document.getElementById("ifem").value
             + " Pessoa Feminina selecionada!"
