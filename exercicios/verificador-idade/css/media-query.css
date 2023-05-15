@@ -24,6 +24,12 @@
     }
 }
 
+@media screen and (orientation: landscape) {
+    main {
+        background-color: blueviolet;
+    }
+}
+
 /*
 @media screen and (min-width: 400px) {
     #img {    
