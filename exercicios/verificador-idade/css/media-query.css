@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 360px) and (max-width: 768px) and (orientation:landscape){
+@media screen and (min-width: 360px) and (orientation:landscape){
     #img {    
         width: 69%; 
         height: auto;
