@@ -1,0 +1,77 @@
+
+/*Todas as demais Mídias*/
+/*Typical Device Breakpoints
+---------------------------------------------------
+@media only screen and (max-width: 600px) {...}
+Pequenas Telas: até 600px de largura (medidas do W3C)
+
+@media only screen and (min-width: 600px) {...}
+Celular: vai de 600px até 768px
+
+@media only screen and (min-width: 768px) {...}
+Tablet: 768px até 992px
+
+@media only screen and (min-width: 992px) {...}
+Laptop e Desktop: 992px até 1200px
+
+@media only screen and (min-width: 1200px) {...}
+TV - Grandes Telas: Acima de 1200px
+*/
+
+/*
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    
+    }
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        background-image: url('../imagens/back-tablet.jpg');        
+    }     
+    #tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        background-image: url('../imagens/back-pc.jpg');        
+    }
+    #pc {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1201px)  {
+    body {
+        background-image: url('../imagens/back-tv.jpg');        
+    }
+    #tv {
+        display: block;
+    }    
+}*/
+
+/*
+@media screen and (max-width: 359px) {
+    #img {    
+        width: 60%; 
+        height: auto;
+        position: absolute;    
+        top: 62vh;
+        left: 25%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    p {
+        font-size: clamp(.5em, 0.6em + 1vw, 2em); 
+    }
+    label {
+        font-size: clamp(.5em, 0.7em + 1vw, 2em);     
+    }
+    button {
+        font-size: clamp(.4em, 0.6em + 1vw, 2em);    
+    }
+    select > option {
+        font-size: clamp(.3em, 0.4em + 1vw, 2em);        
+    }    
+}*/
