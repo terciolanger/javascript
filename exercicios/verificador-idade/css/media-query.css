@@ -23,14 +23,6 @@
         font-size: clamp(.4em, 0.5em + 1vw, 2em);        
     }
 }
-
-@media screen and (orientation: landscape) {
-    main {
-        width: 70%;
-        background-color: rgb(182, 240, 204);
-    }
-}
-
 /*
 @media screen and (min-width: 400px) {
     #img {    
